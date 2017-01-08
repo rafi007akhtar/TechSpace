@@ -1,0 +1,185 @@
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <title>TechSpace - Home</title>
+        
+        <link type="text/css" rel="stylesheet" href="styles.css">
+        
+        <style>
+            .contact-links
+            {
+                text-decoration: none;
+                color: blue;
+            }
+            .contact-links:hover
+            {
+                text-decoration: none;
+                color: green;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        <div id="header"> 
+            TechSpace
+            <a href="http://uem.edu.in/uem-kolkata" target="_blank"> <img src="Modify-UEM_Logo_dress.jpg" width="55" id = "opt" alt="Click to go to UEMK Homepage"> </a>
+            <img src="what.jpg" width="25" alt="What? Some other logo here please. I ran out of ideas" id="opt2">
+        </div>
+        
+        <div class="menu">
+            <a href="#home" id="home1" class="menu-links"> HOME</a> &emsp; 
+            <a href="#ann" id="ann1" class="menu-links"> ANNOUNCEMENTS</a> &emsp; 
+            <a href="#down" id="down1" class="menu-links"> DOWNLOADS</a> &emsp; 
+            <a href="#others" id="others1" class="menu-links"> SOMETHING-ELSE</a> &nbsp; 
+            <a href="#contact" id="contact1" class="menu-links"> CONTACT US</a>
+        </div>
+        <br>
+        
+        <!-- The HOME part begins from here -->
+        <div id="home" class="main-body">
+            Please guys, do something homie here. XD <br>
+            The intro page. <br>
+            Describing what this website could be.
+        </div>
+        
+        <!-- The ANNOUNCEMENTS part begins from here -->
+        <div id="ann" class="main-body">
+            As Ronit mentioned, this site would keep the students upto date <br>
+            Accordingly, this part could include some announcements of UEM <br>
+            Or, upcoming techfests, like this:
+            <ul type="square">
+                <li><em>Kshitij</em> from 25th Jan till 27th Jan, this year</li>
+                <li><em>eXabyte</em> on 7th and 8th Feb</li>
+                <li><em>Tryst</em> (IIT-D) happens on 25th through 27th Feb</li>
+                <li><em>Innovacion</em>, 5th and 6th March, 2017</li>
+            </ul>
+            Etc.
+        </div>
+        
+        <!-- The HOME part begins from here -->
+        <div id="down" class="main-body">
+            Downloadble section for the kiddos and the weak (like me) <br>
+            No porno stuff plz XD <br>
+            Suggested downloads:
+            <ol>
+                <li>C++ by Herbert Schidlt (pdf)</li>
+                <li>Intro to Algos by Cormen et al (pdf)</li>
+                <li>Dev C++ for Windows</li>
+                <li>Other IDEs like Eclipse, Netbeans, Brackets, Atoms, Sublime Text, etc</li>
+                <li>UEM syllabus, calendar, holiday list, etc</li>
+            </ol>
+        </div>
+        
+        <!-- The SOMETHING-ELSE part begins from here -->
+        <div id="others" class="main-body">
+            Not sure what to add here. <br>
+            This could be the "confessions" page for instance (cry) <br>
+            Or, it could be the offers we manage to get from Udacity, Coursera et al on their courses <br> 
+            Or a news area about what's happening around the tech world (The Next Web kinds stuff) <br>
+            Or someone else. <em>Something</em> else (Green Arrow approves XD)
+        </div>
+        
+        <!-- The CONTACT US part begins from here -->
+        <div id="contact" class="main-body">
+            This is the part where we get famous! <br>
+            I shamelessly took some liberties and posted infos of the creaters of this service alphabetically. (Us!) <br>
+            <br>
+            <a href="https://in.linkedin.com/in/abhriya-roy-1961a979" target="_blank" class="contact-links"> ABHRIYO ROY</a> <br>
+            Click <a href="https://www.facebook.com/profile.php?id=100002466764654&fref=ts" target="_blank" class="contact-links"> here</a> to visit his Facebook profile <br>
+            Second year student CSE of University of Engineering and Management, Kolkata <br>
+            Other contact details are hidden for the moment <br>
+            <br>
+            <a href="https://in.linkedin.com/in/md-rafi-akhtar-46283424" target="_blank" class="contact-links"> MD RAFI AKHTAR</a> <br>
+            <a href="https://www.facebook.com/rafi007akhtar" target="_blank" class="contact-links">This</a> is his Facebook page <br>
+            Second year student CSE of University of Engineering and Management, Kolkata <br>
+            Email: <em>alimdrafi@gmail.com</em> <br>
+            Other contact details are kept hidden for the while <br>
+            <br>
+            <a href="https://in.linkedin.com/in/ronit-ray-1260a52a" target="_blank" class="contact-links"> RONIT RAY</a>  <br>
+            <a href="https://www.facebook.com/RonRay98?fref=ts" target="_blank" class="contact-links">Here's</a> how you visit him on Facebook <br>
+            Second year student CSE of University of Engineering and Management, Kolkata <br>
+            More details of contact currently witheld <br>
+            <br>
+            <a href="https://in.linkedin.com/in/rdrsadhu" target="_blank"  class="contact-links"> RUDRA SADHU</a><br>
+            Second year student CSE of University of Engineering and Management, Kolkata <br>
+            Other details will come later <br>
+            <br>
+            <a href="https://in.linkedin.com/in/shalini-g-33674589" target="_blank" class="contact-links"> SHALINI GUHA</a><br>
+            Her Facebook page? <a href="https://www.facebook.com/shalini.guha.9?fref=ts" target="_blank"  class="contact-links">This.</a> <br>
+            Second year student CSE of University of Engineering and Management, Kolkata <br>
+            Right now, this is all you'll get. <br> <br>
+            Pardon me if I left someone out, and correct me so I include him/her from next time.
+            
+        </div>
+        
+        <script>
+            var img = document.getElementsByTagName("img");
+            for(var i = 0; i < img.length; i++)
+                img[i].title = img[i].alt;
+        </script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+            var home = $("#home");
+            var ann = $("#ann");
+            var down = $("#down");
+            var others = $("#others");
+            var contact = $("#contact");
+            
+            var home1 = $("#home1");
+            var ann1 = $("#ann1");
+            var down1 = $("#down1");
+            var others1 = $("#others1");
+            var contact1 = $("#contact1");
+            
+            ann.hide();
+            down.hide();
+            others.hide();
+            contact.hide();
+            
+            home1.click(function(){
+                ann.hide();
+                down.hide();
+                others.hide();
+                contact.hide();
+                home.show();
+            })
+            
+            ann1.click(function(){
+                home.hide();
+                down.hide();
+                others.hide();
+                contact.hide();
+                ann.show();
+            })
+            
+            down1.click(function(){
+                home.hide();
+                ann.hide();
+                others.hide();
+                contact.hide();
+                down.show();
+            })
+            
+            others1.click(function(){
+                home.hide();
+                down.hide();
+                ann.hide();
+                contact.hide();
+                others.show();
+            })
+            
+            contact1.click(function(){
+                home.hide();
+                down.hide();
+                others.hide();
+                ann.hide();
+                contact.show();
+            })
+        </script>
+        
+    </body>
+    
+</html>

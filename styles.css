@@ -1,0 +1,59 @@
+#header
+{
+    background-color: blueviolet;
+    color: aliceblue;
+    font-size: 5em;
+    position: relative;
+    top: -13px;
+    
+}
+#opt
+{
+    font-size: 12px;
+    background-color: blueviolet;
+    color: aliceblue;
+    position: absolute;
+    right: 15px;
+    top: 1em;
+}
+#opt2
+{
+    font-size: 12px;
+    background-color: blueviolet;
+    color: aliceblue;
+    position: absolute;
+    right: 15px;
+    top: 4.5em;
+}
+
+body
+{
+    font-family: sans-serif;
+    background-color: chartreuse;
+}
+
+.menu
+{
+    font-family: fantasy;
+    font-size: 2.5em;
+    color: darkred;
+}
+.main-body
+{
+    font-family: serif;
+    background-color:blanchedalmond;
+}
+.menu-links
+{
+    text-decoration: none;
+    color: darkred;
+}
+.menu-links:visited
+{
+    text-decoration: none;
+}
+.menu-links:hover
+{
+    text-decoration: underline;
+    color: blue;
+}
