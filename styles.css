@@ -55,6 +55,6 @@ body
 }
 .menu-links:hover
 {
-    text-decoration: underline;
+    text-decoration: none;
     color: blue;
 }
