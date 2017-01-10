@@ -13,12 +13,15 @@
                 color: blue;
                 font-family: monospace;
                 font-weight: 900;
-                font-size: 1.3em;
             }
             .contact-links:hover
             {
                 text-decoration: underline;
                 color: green;
+            }
+            .names
+            {
+                font-size: 1.3em;
             }
 
         </style>
@@ -90,42 +93,46 @@
             This is the part where we get famous! <br>
             I shamelessly took some liberties and posted infos of the creaters of this service alphabetically. (Us!) <br>
             <br>
-            <a href="https://in.linkedin.com/in/abhriya-roy-1961a979" target="_blank" class="contact-links"> ABHRIYO ROY</a> <br>
+            <a href="https://in.linkedin.com/in/abhriya-roy-1961a979" target="_blank" class="contact-links names"> ABHRIYO ROY</a> <br>
             Click <a href="https://www.facebook.com/profile.php?id=100002466764654&fref=ts" target="_blank" class="contact-links"> here</a> to visit his Facebook profile <br>
             Second year student CSE of University of Engineering and Management, Kolkata <br>
             Other contact details are hidden for the moment <br>
             <br>
-            <a href="https://in.linkedin.com/in/md-rafi-akhtar-46283424" target="_blank" class="contact-links"> MD RAFI AKHTAR</a> <br>
+            <a href="https://in.linkedin.com/in/md-rafi-akhtar-46283424" target="_blank" class="contact-links names"> MD RAFI AKHTAR</a> <br>
             <a href="https://www.facebook.com/rafi007akhtar" target="_blank" class="contact-links">This</a> is his Facebook page <br>
             Second year student CSE of University of Engineering and Management, Kolkata <br>
             Email: <em>alimdrafi@gmail.com</em> <br>
             Other contact details are kept hidden for the while <br>
             <br>
-            <a href="https://in.linkedin.com/in/ronit-ray-1260a52a" target="_blank" class="contact-links"> RONIT RAY</a>  <br>
+            <a href="https://in.linkedin.com/in/ronit-ray-1260a52a" target="_blank" class="contact-links names"> RONIT RAY</a>  <br>
             <a href="https://www.facebook.com/RonRay98?fref=ts" target="_blank" class="contact-links">Here's</a> how you visit him on Facebook <br>
             Second year student CSE of University of Engineering and Management, Kolkata <br>
             More details of contact currently witheld <br>
             <br>
-            <a href="https://in.linkedin.com/in/rdrsadhu" target="_blank"  class="contact-links"> RUDRA SADHU</a><br>
+            <a href="https://in.linkedin.com/in/rdrsadhu" target="_blank"  class="contact-links names"> RUDRA SADHU</a><br>
             Second year student CSE of University of Engineering and Management, Kolkata <br>
             Other details will come later <br>
             <br>
-            <a href="https://in.linkedin.com/in/shalini-g-33674589" target="_blank" class="contact-links"> SHALINI GUHA</a><br>
+            <a href="https://in.linkedin.com/in/shalini-g-33674589" target="_blank" class="contact-links names"> SHALINI GUHA</a><br>
             Her Facebook page? <a href="https://www.facebook.com/shalini.guha.9?fref=ts" target="_blank"  class="contact-links">This.</a> <br>
             Second year student CSE of University of Engineering and Management, Kolkata <br>
-            Right now, this is all you'll get. <br> <br>
-            Pardon me if I left someone out, and correct me so I include him/her from next time.
+            Right now, this is all you'll get. <br> 
+            <p>Pardon me if I left someone out, and correct me so I include him/her from next time.</p> 
+            
+            <p>We can include the following contact details: images, phone numbers, email ids, Facebook links, LinkedIn links. <br>
+            We could build a slide show to improve the user experience, instead of plain text with some CSS. Feedback please.
+            </p>
             
         </div>
-        
-        <script>
-            var img = document.getElementsByTagName("img");
-            for(var i = 0; i < img.length; i++)
-                img[i].title = img[i].alt;
-        </script>
-        
+                
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script>
+            // Add hover-messages to the images
+            img = $("img");
+            for(var i = 0; i < img.length; i++)
+                img[i].title = img[i].alt;
+            
+            // set the rest of the interactions
             var home = $("#home");
             var ann = $("#ann");
             var down = $("#down");
