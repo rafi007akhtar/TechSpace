@@ -56,5 +56,6 @@ body
 .menu-links:hover
 {
     text-decoration: none;
-    color: blue;
+    color: greenyellow;
+    background-color: darkred;
 }
