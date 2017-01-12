@@ -23,7 +23,7 @@
             {
                 font-size: 1.3em;
             }
-
+            
         </style>
         
     </head>
@@ -93,30 +93,55 @@
             This is the part where we get famous! <br>
             I shamelessly took some liberties and posted infos of the creaters of this service alphabetically. (Us!) <br>
             <br>
-            <a href="https://in.linkedin.com/in/abhriya-roy-1961a979" target="_blank" class="contact-links names"> ABHRIYO ROY</a> <br>
-            Click <a href="https://www.facebook.com/profile.php?id=100002466764654&fref=ts" target="_blank" class="contact-links"> here</a> to visit his Facebook profile <br>
-            Second year student CSE of University of Engineering and Management, Kolkata <br>
-            Other contact details are hidden for the moment <br>
-            <br>
-            <a href="https://in.linkedin.com/in/md-rafi-akhtar-46283424" target="_blank" class="contact-links names"> MD RAFI AKHTAR</a> <br>
-            <a href="https://www.facebook.com/rafi007akhtar" target="_blank" class="contact-links">This</a> is his Facebook page <br>
-            Second year student CSE of University of Engineering and Management, Kolkata <br>
-            Email: <em>alimdrafi@gmail.com</em> <br>
-            Other contact details are kept hidden for the while <br>
-            <br>
-            <a href="https://in.linkedin.com/in/ronit-ray-1260a52a" target="_blank" class="contact-links names"> RONIT RAY</a>  <br>
-            <a href="https://www.facebook.com/RonRay98?fref=ts" target="_blank" class="contact-links">Here's</a> how you visit him on Facebook <br>
-            Second year student CSE of University of Engineering and Management, Kolkata <br>
-            More details of contact currently witheld <br>
-            <br>
-            <a href="https://in.linkedin.com/in/rdrsadhu" target="_blank"  class="contact-links names"> RUDRA SADHU</a><br>
-            Second year student CSE of University of Engineering and Management, Kolkata <br>
-            Other details will come later <br>
-            <br>
-            <a href="https://in.linkedin.com/in/shalini-g-33674589" target="_blank" class="contact-links names"> SHALINI GUHA</a><br>
-            Her Facebook page? <a href="https://www.facebook.com/shalini.guha.9?fref=ts" target="_blank"  class="contact-links">This.</a> <br>
-            Second year student CSE of University of Engineering and Management, Kolkata <br>
-            Right now, this is all you'll get. <br> 
+            <button type="button" id="prev">←</button> &emsp; <br>
+            
+            <img src="abh.jpg" width="150" id="1"> 
+            <div id="1t">
+                <br>
+                <a href="https://in.linkedin.com/in/abhriya-roy-1961a979" target="_blank" class="contact-links names"> ABHRIYO ROY</a>
+                Click <a href="https://www.facebook.com/profile.php?id=100002466764654&fref=ts" target="_blank" class="contact-links"> here</a> to visit his Facebook profile <br>
+                Second year student CSE of University of Engineering and Management, Kolkata <br>
+                Other contact details are hidden for the moment 
+            </div>
+            
+            <img src="raf.jpg" width="150" id="2"> 
+            <div id="2t">
+                <br>
+                <a href="https://in.linkedin.com/in/md-rafi-akhtar-46283424" target="_blank" class="contact-links names"> MD RAFI AKHTAR</a> 
+                <a href="https://www.facebook.com/rafi007akhtar" target="_blank" class="contact-links">This</a> is his Facebook page <br>
+                Second year student CSE of University of Engineering and Management, Kolkata <br>
+                Email: <em>alimdrafi@gmail.com</em> <br>
+                Other contact details are kept hidden for the while 
+            </div>
+            
+            <img src="ron.jpg" width="150" id="3"> 
+            <div id="3t">
+                <br>
+                <a href="https://in.linkedin.com/in/ronit-ray-1260a52a" target="_blank" class="contact-links names"> RONIT RAY</a>
+                <a href="https://www.facebook.com/RonRay98?fref=ts" target="_blank" class="contact-links">Here's</a> how you visit him on Facebook <br>
+                Second year student CSE of University of Engineering and Management, Kolkata <br>
+                    More details of contact currently witheld 
+            </div> 
+            
+            <img src="rud.jpg" width="150" id="4"> 
+            <div id="4t">
+                <br>
+                <a href="https://in.linkedin.com/in/rdrsadhu" target="_blank"  class="contact-links names"> RUDRA SADHU</a><br>
+                Second year student CSE of University of Engineering and Management, Kolkata <br>
+                    Other details will come later
+            </div> 
+            
+            <img src="sha.jpg" width="150" id="5"> 
+            <div id="5t">
+                <br>
+                <a href="https://in.linkedin.com/in/shalini-g-33674589" target="_blank" class="contact-links names"> SHALINI GUHA</a>
+                Her Facebook page? <a href="https://www.facebook.com/shalini.guha.9?fref=ts" target="_blank"  class="contact-links">This.</a> <br>
+                Second year student CSE of University of Engineering and Management, Kolkata <br>
+                    Right now, this is all you'll get. 
+            </div>
+            <button type="button" id="next">→</button>
+            
+            
             <p>Pardon me if I left someone out, and correct me so I include him/her from next time.</p> 
             
             <p>We can include the following contact details: images, phone numbers, email ids, Facebook links, LinkedIn links. <br>
@@ -127,12 +152,13 @@
                 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script>
+            var i;
             // Add hover-messages to the images
             img = $("img");
-            for(var i = 0; i < img.length; i++)
+            for(i = 0; i < img.length; i++)
                 img[i].title = img[i].alt;
             
-            // set the rest of the interactions
+            // set the menu the interactions
             var home = $("#home");
             var ann = $("#ann");
             var down = $("#down");
@@ -188,7 +214,43 @@
                 others.hide();
                 ann.hide();
                 contact.show();
+                
+                // now setting the CONTACT-US slideshow
+                var prev = $("#prev");
+                var next = $("#next");
+                prev.hide();
+                for(i = 1; i <= 5; i++)
+                {
+                    $("#"+i).hide();
+                    $("#"+i+"t").hide();
+                }
+                var c = 1; // c for count, as in count of the current image; starts from 1
+                $("#"+c).slideDown();
+                $("#"+c+"t").show();
+                next.click(function() {
+                    prev.show();
+                    $("#"+c).hide();
+                    $("#"+c+"t").hide();
+                    c++; // move on to the next image
+                    $("#"+c).slideDown();
+                    $("#"+c+"t").show();
+                    if(c==5)
+                        next.hide();
+                })
+                prev.click(function() {
+                    next.show();
+                    $("#"+c).hide();
+                    $("#"+c+"t").hide();
+                    c--; // move on to previous image
+                    $("#"+c).slideDown();
+                    $("#"+c+"t").show();
+                    if(c==1)
+                        prev.hide();
+                })
+
             })
+            
+            
         </script>
         
     </body>
