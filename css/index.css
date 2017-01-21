@@ -1,3 +1,4 @@
+/*for index page*/
 @import url(https://fonts.googleapis.com/css?family=Slabo+27px);
 
 html body{
@@ -9,7 +10,7 @@ html body{
     padding: 5px;
     font-size: 18px;
     margin-bottom: 0!important;
-    position:relative;
+    position: relative;
 }
 
 .jumbotron{
