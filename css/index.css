@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+
+html body{
+    font-family: "Slabo 27px";
+    margin-bottom: 0!important;
+}
+
+.navbar, .navbar-brand{
+    padding: 5px;
+    font-size: 18px;
+    margin-bottom: 0!important;
+    position:relative;
+}
+
+.jumbotron{
+    position:relative;
+    margin-top:0;
+    margin-bottom: 0!important;
+}
+
+.content{
+    text-align: center;
+}
+
+.first{
+    height: 300px;
+}
+
+.second{
+    height: 300px;
+}
+
+.third{
+    height: 300px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
