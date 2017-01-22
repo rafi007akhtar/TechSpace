@@ -1,14 +1,11 @@
 <html>
     <head>        
         <meta charset="utf-8">
-        <title>TechSpace - Home</title>
+        <title>TechSpace - Other things</title>
         
         <link type="text/css" rel="stylesheet" href="css/common-styles.css">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
@@ -22,7 +19,7 @@
                   <a class="navbar-brand" href="#">TechSpace</a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">HOME</a></li>
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="announcements.html">ANNOUNCEMENTS</a></li>
                     <li><a href="downloads.html">DOWNLOADS</a></li>
                     <li class="active"><a href="#">SOMETHING-ELSE</a></li>
@@ -32,29 +29,46 @@
 
             <div class="jumbotron" id="top">
                 <div class="container text-center">
-                    <h1>UEM TechSpace</h1>
+                    <h1>So what do we put in here?</h1>
                 </div>
             </div>
         
             <div class="row content container-fluid">
                 <div class="col-md-4 first">
-                    <img src="http://www.freeiconspng.com/uploads/news-icon-12.png">
-                    <h2>STAY UPDATED</h2>
-                    <h3>Latest college buzz, wherever you are.</h3>
+                    <a href="http://thenextweb.com/in/" target="_blank"> <img src="images/tnw.jpg" width="300px">
+                    <h2>TECH NEWS</h2></a>
+                    <h3>Be updated about what's happening around the tech-world.</h3>
                 </div>
                 <div class="col-md-4 second">
-                    <img src="http://www.freeiconspng.com/uploads/writer-icon-png-13.png">
-                    <h2>WRITE</h2>
-                    <h3>Make yourself heard.</h3>
+                    <a href="http://www.imdb.com" target="_blank"> <img src="images/imdb.jpg" width="300px">
+                    <h2>SOME NON-ACADEMIC STUFF?</h2></a>
+                    <h3>About movies, TV shows, or sports.</h3>
                 </div>
                 <div class="col-md-4 third">
-                    <img src="http://icons.iconarchive.com/icons/custom-icon-design/mono-general-1/512/chat-icon.png">
-                    <h2>TALK</h2>
-                    <h3>Communicate like never before.</h3>
+                    <a href="#show-disappointing-stuff" id="dont"> <img src="images/no.png" width="300px">
+                    <h2>DON'T CLICK HERE</a></h2>
+                    <h3>You'll see disappointing stuff.</h3>
+                    <span id="show-disappointing-stuff">Disappointing stuff (Told ya) <br>
+                    <a href="#" id="back">Go back</a> </span>
                 </div>
             </div>
 
         </div>    
+        
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+            var diss = $("#show-disappointing-stuff");
+            diss.hide();
+            var dont = $("#dont");
+            dont.click(function() {
+                diss.show();
+            });
+            var back = $("#back");
+            back.click(function() {
+                diss.hide();
+            })
+        </script>
     </body>
 
 </html>
